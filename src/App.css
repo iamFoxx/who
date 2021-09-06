@@ -1,5 +1,47 @@
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 575px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.emojis_container{
+  font-size: 6em;
+}
+.emojis_btn_container{
+  padding: 2rem 0;
+}
+
+.emojis_btn{
+  border: 2px solid #000;
+  outline: 0;;
+  padding: .85rem 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: .25rem;
+  margin: 0 .35rem;
+  background-color: antiquewhite;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.emojis_btn:hover{
+  background-color: salmon;
+  color: #000;
 }
 
 .App-logo {
